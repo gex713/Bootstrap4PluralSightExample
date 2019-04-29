@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Flexible Box</title>
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+
+    <style>
+        div {
+            border: 1px solid green;
+        }
+
+        section {
+            background: #f1f1f1;
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+    <aside class="container">
+
+        <p>These show reversed things</p>
+        <section class="d-flex flex-row-reverse">
+            <div class="p-4">One</div>
+            <div class="p-4">Two</div>
+            <div class="p-4">Three</div>
+        </section>
+
+        <p>Here are things in chronological order</p>
+        <section class="d-flex flex-column">
+            <div>1pm</div>
+            <div>2pm</div>
+            <div>3pm</div>
+        </section>
+
+        <p style="margin-top:3ex">Here are things in reverse chronological order</p>
+        <section class="d-flex flex-column-reverse">
+            <div>1pm</div>
+            <div>2pm</div>
+            <div>3pm</div>
+        </section>
+
+        <p style="margin-top:3ex">Different vertical alignments for flex box</p>
+        <section class="d-flex flex-row">
+            <div class="p-4 align-self-start">Start</div>
+            <div class="p-4 align-self-center">Center</div>
+            <div class="p-4 align-self-end">End</div>
+            <div class="p-4 align-self-baseline h3">Baseline</div>
+            <div class="p-4 align-self-stretch">Stretch</div>
+        </section>
+
+        <p style="margin-top:3ex">200px tall section. Centered for every div...</p>
+        <section class="d-flex flex-row align-items-center">
+            <div class="p-4">Uno</div>
+            <div class="p-4">Dos</div>
+            <div class="p-4">Tres</div>
+        </section>
+
+        <p style="margin-top:3ex">200px tall section. This is horizontal alignment "between"</p>
+        <section class="d-flex flex-row justify-content-between">
+            <div class="p-4">Uno</div>
+            <div class="p-4">Dos</div>
+            <div class="p-4">Tres</div>
+        </section>
+
+    </aside>
+</body>
+</html>

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>The Grid System</title>
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+
+    <style>
+        .GridDemo {
+            margin-top: 20px;
+            border: 1px solid #000;
+        }
+    </style>
+
+
+</head>
+<body>
+    <section class="container">
+        <section class="row">
+            <div class="GridDemo col">Col 1</div>
+            <div class="GridDemo col">Col 2</div>
+            <div class="GridDemo col">Col 3</div>
+            <div class="GridDemo col">Col 4</div>
+            <div class="GridDemo col">Col 5</div>
+            <div class="GridDemo col">Col 6</div>
+            <div class="GridDemo col">Col 7</div>
+            <div class="GridDemo col">Col 8</div>
+            <div class="GridDemo col">Col 9</div>
+            <div class="GridDemo col">Col 10</div>
+            <div class="GridDemo col">Col 11</div>
+            <div class="GridDemo col">Col 12</div>
+
+            <!-- w-100 causes it to take up 100% of the width of the columns -->
+            <div class="GridDemo w-100"></div>
+
+            <div class="GridDemo col">Auto</div>
+            <div class="GridDemo col-8">8 cols</div>
+            <div class="GridDemo col-2">2 cols</div>
+
+            <!-- handy separator for this demo... -->
+            <div class="GridDemo w-100"></div>
+
+            <!-- Seems weird, but you can order your divs with the order option -->
+            <div class="GridDemo col-sm order-2">First</div>
+            <div class="GridDemo col-sm order-0">Second</div>
+            <div class="GridDemo col-sm order-1">Third</div>
+
+            <div class="GridDemo w-100"></div>
+
+            <div class="GridDemo col-6 bg-info">1</div>
+            <div class="GridDemo col-6 bg-secondary">2</div>
+
+            <div class="GridDemo col-4 bg-info">1</div>
+            <div class="GridDemo col-4 bg-secondary">2</div>
+            <div class="GridDemo col-4 bg-success">3</div>
+
+            <div class="GridDemo col-3 bg-info">1</div>
+            <div class="GridDemo col-3 bg-secondary">2</div>
+            <div class="GridDemo col-3 bg-success">3</div>
+            <div class="GridDemo col-3 bg-danger">4</div>
+
+            <div class="GridDemo w-100"></div>
+
+            <div class="GridDemo col-sm-10 col-md-8 col-lg-4 col-xl-2">Bigger at small screens</div>
+            <div class="GridDemo col-sm-2 col-md-4 col-lg-8 col-xl-10">Bigger at big screens</div>
+
+        </section>
+
+        <section class="row bg-warning" style="height:200px; margin-top:20px;">
+            <div class="col bg-success">Default Align</div>
+            <div class="col bg-secondary align-self-start">Start</div>
+            <div class="col bg-danger align-self-center">Center</div>
+            <div class="col bg-primary align-self-end">End</div>
+        </section>
+
+        <h1> Row Justification</h1>
+        <section class="row bg-warning justify-content-start" style="height:200px; margin-top:20px;">
+            <div class="col-4 bg-success">Column 1</div>
+            <div class="col-4 bg-secondary">Column 2</div>
+        </section>
+        <section class="row bg-warning justify-content-center" style="height:200px; margin-top:20px;">
+            <div class="col-4 bg-success">Column 1</div>
+            <div class="col-4 bg-secondary">Column 2</div>
+        </section>
+        <section class="row bg-warning justify-content-end" style="height:200px; margin-top:20px;">
+            <div class="col-4 bg-success">Column 1</div>
+            <div class="col-4 bg-secondary">Column 2</div>
+        </section>
+        <section class="row bg-warning justify-content-around" style="height:200px; margin-top:20px;">
+            <div class="col-4 bg-success">Column 1</div>
+            <div class="col-4 bg-secondary">Column 2</div>
+        </section>
+        <section class="row bg-warning justify-content-between" style="height:200px; margin-top:20px;">
+            <div class="col-4 bg-success">Column 1</div>
+            <div class="col-4 bg-secondary">Column 2</div>
+        </section>
+
+    </section>
+
+</body>
+</html>

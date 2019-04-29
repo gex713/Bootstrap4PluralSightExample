@@ -15,13 +15,25 @@
             color: white;
             outline:auto;
         }
+/*center center in the background of .ContainerDemo causes the image to be anchored at that point*/
+        .ContainerDemo{
+            width:100%;
+            height:200px;
+            background:url('Images/1280x800_birthday_wallpaper_zelda.jpg') no-repeat center center; 
+            background-size:cover;
+        }
+        .RowDemo{
+            width:100%;
+            height:100px;
+        }
     </style>
 
 </head>
 
 <body>
+
     <hr />
-    <div class="BackgroundDemo bg-primary">Primary</div>
+    <!--<div class="BackgroundDemo bg-primary">Primary</div>
     <div class="BackgroundDemo bg-secondary">Secondary</div>
     <div class="BackgroundDemo bg-warning">Warning</div>
     <div class="BackgroundDemo bg-danger">Danger</div>
@@ -31,6 +43,34 @@
     <div class="BackgroundDemo bg-light text-dark">Light</div>
     <div class="BackgroundDemo bg-success">Success</div>
     <div class="BackgroundDemo bg-white text-dark">White</div>
-    <div class="BackgroundDemo bg-transparent text-dark">Transparent</div>
+    <div class="BackgroundDemo bg-transparent text-dark">Transparent</div>-->
+
+    <h1>Container Demo</h1>
+    <!-- Resizing the window while running will cause the picture to resize as well. -->
+    <div class="ContainerDemo text-light">CSS - No Bootstrap</div>
+
+    <div class="container">
+        <div class="ContainerDemo text-light">Container</div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="ContainerDemo text-light">Fluid Container</div>
+    </div>
+
+    <h1>Row Demo</h1>
+    <!-- Container will just put this in the middle, container-fluid will actually fill the whole screen. -->
+    <div class="container">
+        <div class="row">
+            <div class="RowDemo col bg-success">Col 1</div>
+            <div class="RowDemo col bg-warning">Col 2</div>
+            <div class="RowDemo col bg-danger">Col 3</div>
+        </div>
+        <div class="row">
+            <div class="RowDemo col bg-primary">Col 1</div>
+            <div class="RowDemo col bg-info">Col 2</div>
+        </div>
+
+    </div>
+
 </body>
 </html>

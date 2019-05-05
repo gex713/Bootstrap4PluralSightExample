@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bootstrap List Groups with Javascript</title>
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/navbar-shrinker.js"></script>
+    
+    <style>
+        
+        header.masthead {
+            text-align: center;
+            color: white;
+            background-image: url('Images/1280x800_birthday_wallpaper_zelda.jpg');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh; /*using vw and vh is percentage. 50vw and 50vh puts the image in the upper left corner, always half width and height of the screen*/
+            
+        }
+
+    </style>
+
+</head>
+<body id="top">
+<header class="masthead">
+    <div class="container">
+        <div class="intro-text"></div>
+    </div>
+</header>
+
+<div class="container mt-4">
+    
+    <h1>The Legend of Zelda</h1>
+    
+    <div class="row mt-5">
+        <div class="col-4">
+            <div class="list-group mb-5" id="list-tab" role="tablist">
+                <a href="#list-game1" id="list-game1-list" data-toggle="list" class="list-group-item list-group-item-action active">The Legend of Zelda</a>
+                <a href="#list-game2" id="list-game2-list" data-toggle="list" class="list-group-item list-group-item-action">The Legend of Zelda II: The Adventure of Link</a>
+                <a href="#list-game3" id="list-game3-list" data-toggle="list" class="list-group-item list-group-item-action">The Legend of Zelda: A Link to the Past</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div role="tabpanel" id="list-game1" class="tab-pane fade show active">
+                    <h3>The Legend of Zelda</h3>
+                    <p>The first game that was released in 1985. Link traveled across Hyrule to gather all 8 pieces of the broken Triforce of Courage to rescue Princess Zelda from the clutches of the evil beast Ganon.</p>
+                </div>
+                <div role="tabpanel" id="list-game2" class="tab-pane fade">
+                    <h3>The Adventure of Link</h3>
+                    <p>Princess Zelda had fallen into an enchanted sleep. Link again set forth across Hyrule to end her slumber. He encountered the darkness within himself and defeated it to awaken her.</p>
+                </div>
+                <div role="tabpanel" id="list-game3" class="tab-pane fade">
+                    <h3>A Link to the Past</h3>
+                    <p>The wizard Agahnim captured each of the seven maidens, descendants of the wise men that sealed away the beast Ganon. After weakening the seal with the final maiden, Princess Zelda, he was able to bring darkness upon the land and restore his master, Ganon, to power. Link fought back, traveling across Hyrule and between the realms of dark and light to rescue each maiden and stop Ganon again.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

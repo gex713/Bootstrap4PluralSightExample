@@ -9,7 +9,120 @@
     <script src="Scripts/bootstrap.bundle.min.js"></script>
     <script src="Scripts/navbar-shrinker.js"></script>
 </head>
+
 <body>
+
+    <div class="container mt-4">
+        <h1 class="display-4">List of Characters (inline tags)</h1>
+        <ul>
+            <li><mark>Princess Zelda</mark></li> <!--mark adds a yellow background-->
+            <li><del>Link</del></li> <!--del does a delete (strikethrough)-->
+            <li><s>Ganondorf</s></li> <!--s does a strikethrough also-->
+            <li><ins>Great Fairy</ins></li> <!--ins is an insert, puts an underline under the text-->
+            <li><u>Agahnim</u></li> <!--u is underline-->
+            <li><small>Sahasrahla</small></li> <!--seen this before, small text for things like fine print-->
+            <li><em>King of Hyrule</em></li> <!--em is emphasis, it is italicized-->
+        </ul>
+    </div>
+
+    <hr />
+    <div class="container mt-4">
+        <h1 class="display-4">List of Characters using lists</h1>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action">Princess Zelda</li>
+            <li class="list-group-item list-group-item-action">Link</li>
+            <li class="list-group-item list-group-item-action">Ganondorf</li>
+            <li class="list-group-item list-group-item-action">Great Fairy</li>
+            <li class="list-group-item list-group-item-action">Agahnim</li>
+            <li class="list-group-item list-group-item-action">Sahasrahla</li>
+            <li class="list-group-item list-group-item-action">King of Hyrule</li>
+        </ul>
+
+        <hr />
+        <ul class="list-group">
+            <li class="list-group-item ">Princess Zelda</li>
+            <li class="list-group-item list-group-item-primary">Link</li>
+            <li class="list-group-item list-group-item-secondary">Ganondorf</li>
+            <li class="list-group-item list-group-item-success">Great Fairy</li>
+            <li class="list-group-item list-group-item-warning">Agahnim</li>
+            <li class="list-group-item list-group-item-danger">Sahasrahla</li>
+            <li class="list-group-item list-group-item-light">King of Hyrule</li>
+            <li class="list-group-item list-group-item-dark">Din</li>
+        </ul>
+
+        <hr />
+        <ul class="list-group mt-5 list-group-flush">
+            <!--flush removes the left and right borders-->
+            <li class="list-group-item d-flex justify-content-between align-items-center">Princess Zelda <span class="badge badge-primary">40</span></li>
+            <li class="list-group-item">Link</li>
+            <li class="list-group-item">Ganondorf</li>
+            <li class="list-group-item">Great Fairy</li>
+            <li class="list-group-item">Agahnim</li>
+            <li class="list-group-item">Sahasrahla</li>
+            <li class="list-group-item">King of Hyrule</li>
+        </ul>
+
+        <hr class="mt-5" />
+        <ul class="list-unstyled">
+            <li>Princess Zelda</li>
+            <li>Link</li>
+            <li>Ganondorf</li>
+            <li>Great Fairy</li>
+            <li>Agahnim</li>
+            <li>Sahasrahla</li>
+            <li>King of Hyrule</li>
+        </ul>
+
+        <hr class="mt-5" />
+        <ul class="list-inline">
+            <li class="list-inline-item">Princess Zelda</li>
+            <li class="list-inline-item">Link</li>
+            <li class="list-inline-item">Ganondorf</li>
+            <li class="list-inline-item">Great Fairy</li>
+            <li class="list-inline-item">Agahnim</li>
+            <li class="list-inline-item">Sahasrahla</li>
+            <li class="list-inline-item">King of Hyrule</li>
+        </ul>
+
+        <hr class="mt-5" />
+        <dl class="row">
+            <dt class="col-sm-3">Princess Zelda</dt>
+            <dd class="col-sm-9">The titular princess. She is strong in her own right, even if she gets captured a lot.</dd>
+
+            <dt class="col-sm-3">Link</dt>
+            <dd class="col-sm-9">Often confused as Zelda. He saves Zelda in almost every telling of the story.</dd>
+
+            <dt class="col-sm-3">Ganondorf</dt>
+            <dd class="col-sm-9">The human incarnation of the creature Ganon. He is smart and strong, often threatening Hyrule with everlasting darkness.</dd>
+
+            <!--truncate causes an ellipsis if the text is too large for the column-->
+            <dt class="col-sm-3 text-truncate">Great Fairy and the fairies of Hyrule</dt>
+            <dd class="col-sm-9">There are many fairies in Hyrule. Each bestows some kind of power upon link. The Great Fairy is the leader of them all.</dd>
+
+            <dt class="col-sm-3">Goddesses of Hyrule</dt>
+            <dd class="col-sm-9">
+                <dl class="row">
+                    
+                    <dt class="col-sm-4">
+                        Din
+                    </dt>
+                    <dd class="col-sm-8">The goddess of Power</dd>
+                    
+                    <dt class="col-sm-4">
+                        Nayru
+                    </dt>
+                    <dd class="col-sm-8">The goddess of Wisdom </dd>
+
+                    <dt class="col-sm-4">
+                        Farore
+                    </dt>
+                    <dd class="col-sm-8">The goddess of Courage</dd>
+                    
+                </dl>
+            </dd>
+        </dl>
+
+    </div>
 
 </body>
 </html>

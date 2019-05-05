@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+
+    <title>Responsive Floats</title>
+    <!-- This style was copy pasted from the PluralSight course -->
+    <style>
+
+        @media(max-width: 576px) {
+            body {
+                background-color: yellow;
+            }
+
+            .xl, .lg, .md, .sm, .xs {
+                display: none;
+            }
+
+            .xs {
+                display: block;
+            }
+        }
+
+        @media(min-width: 576px) {
+            body {
+                background-color: orange;
+            }
+
+            .xl, .lg, .md, .sm, .xs {
+                display: none;
+            }
+
+            .sm {
+                display: block;
+            }
+        }
+
+        @media(min-width: 768px) {
+            body {
+                background-color: lightgreen;
+            }
+
+            .xl, .lg, .md, .sm, .xs {
+                display: none;
+            }
+
+            .md {
+                display: block;
+            }
+        }
+
+        @media(min-width: 992px) {
+            body {
+                background-color: lightblue;
+            }
+
+            .xl, .lg, .md, .sm, .xs {
+                display: none;
+            }
+
+            .lg {
+                display: block;
+            }
+        }
+
+        @media(min-width: 1200px) {
+            body {
+                background-color: lightsalmon;
+            }
+
+            .xl, .lg, .md, .sm, .xs {
+                display: none;
+            }
+
+            .xl {
+                display: block;
+            }
+        }
+
+        h3 {
+            background-color: black;
+            color: white !important;
+            padding: 3px;
+            text-align: center;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1> Resize Me!</h1>
+        <h3 class="h4 xs mb-4">Extra-Small Devices &lt; 576px </h3>
+        <h3 class="h4 sm mb-4">Small Devices &lt; 576px </h3>
+        <h3 class="h4 md mb-4">Medium Devices &lt; 768px </h3>
+        <h3 class="h4 lg mb-4">Large Devices &lt; 992px </h3>
+        <h3 class="h4 xl mb-4">XL Devices &lt; 1200px </h3>
+
+        <p class="float-sm-right clearfix">
+            Float right when small or larger.
+        </p>
+        <hr />
+        <br />
+        <p class="float-md-right clearfix">
+            Float right when med or larger.
+        </p>
+        <hr />
+        <br />
+        <p class="float-lg-right clearfix">
+            Float right when large or larger.
+        </p>
+        <hr />
+        <br />
+        <p class="float-sm-right float-lg-left clearfix">
+            Float right when small or med and<br /> float left when large or larger.
+        </p>
+        <hr />
+        <br />
+
+        <!-- Here, you can see that the text tries to fill in between the buttons. The fix is below that example. -->
+        <div>
+            <button class="float-left">Left Float</button>
+            <button class="float-right">Right Float</button>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+        </p>
+        
+        <hr/>
+        <br/>
+        <!-- Clearfix makes it so that the text gets out of the way. -->
+        <div class="clearfix">
+            <button class="float-left">Left Float</button>
+            <button class="float-right">Right Float</button>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+
+</body>
+</html>

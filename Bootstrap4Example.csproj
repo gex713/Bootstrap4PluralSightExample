@@ -76,10 +76,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="FixedType.html" />
     <Content Include="FlexBox.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="GridSystem.html" />
     <Content Include="Images\1280x800_birthday_wallpaper_zelda.jpg" />
+    <Content Include="Images\TheLegendofZeldaALinktothePastSNESGameCover.jpg" />
     <Content Include="Index.html" />
     <Content Include="InlineTags.html" />
     <Content Include="ListGroupsAndJavascript.html" />

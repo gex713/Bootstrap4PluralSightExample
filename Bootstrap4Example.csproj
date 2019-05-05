@@ -81,6 +81,7 @@
     <Content Include="GridSystem.html" />
     <Content Include="Images\1280x800_birthday_wallpaper_zelda.jpg" />
     <Content Include="Index.html" />
+    <Content Include="Paragraphs.html" />
     <Content Include="NavBar.html" />
     <Content Include="PaddingDisplayMargin.html" />
     <Content Include="Scripts\bootstrap.bundle.js" />

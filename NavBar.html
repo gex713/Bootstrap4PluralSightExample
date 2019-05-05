@@ -9,6 +9,11 @@
     <script src="Scripts/bootstrap.bundle.min.js"></script>
 
     <style>
+
+        .heightAdder {
+            height: 1000px;
+        }
+
         header.masthead {
             text-align: center;
             color: white;
@@ -17,8 +22,40 @@
             background-attachment: scroll;
             background-position: center center;
             background-size: cover;
-            width: 100vw;
+            /*width: 100vw;
             height: 100vh; /*using vw and vh is percentage. 50vw and 50vh puts the image in the upper left corner, always half width and height of the screen*/
+            padding-top: 300px;
+            padding-bottom: 200px;
+        }
+
+        @media(min-width: 992px) {
+            #mainNav {
+                padding-top: 25px;
+                padding-bottom: 25px;
+                transition: padding-top: 0.3s, padding-bottom: 0.3s;
+                border: none;
+                background-color: transparent;
+            }
+
+                #mainNav .navbar-brand {
+                    font-size: 1.75em;
+                    transition: all 0.3s;
+                }
+
+                #mainNav .navbar-nav .nav-item .nav-link {
+                    padding: 1.1em 1em !important;
+                }
+
+                #mainNav .navbar-shrink {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    background-color: black;
+                }
+
+                    #mainNav .navbar-shrink .navbar-brand {
+                        font-size: 1.25em;
+                        padding: 12px 0;
+                    }
         }
     </style>
 </head>
@@ -69,13 +106,16 @@
         </div>
     </header>
 
+    <div class="heightAdder"></div>
+
     <!-- Pagination -->
     <!-- Question: this is all well and good when you know how many pages you have, but what about dynamic? -->
     <div class="container m-5">
         <h4>Games</h4>
         <div>
             <nav aria-label="Game Links">
-                <ul class="pagination justify-content-center"> <!-- Can add the pagination-lg to the class to make the buttons large -->
+                <ul class="pagination justify-content-center">
+                    <!-- Can add the pagination-lg to the class to make the buttons large -->
                     <li class="page-item disabled">
                         <a class="page-link" href="#" aria-label="Previous">
                             <!-- The laquo is markup for the left double arrow. This is just the text to be displayed for the button, could have been the word "Previous" or whatever -->
@@ -169,5 +209,10 @@
     <article>
         "Super interesting stuff!"
     </article>
+
+    <script src="Scripts/navbar-shrinker.js">
+
+    </script>
+
 </body>
 </html>
